@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function table() {
+export default function Table() {
   const [tabla, setTabla] = useState(refreshList)
 
   const refreshList = () => {

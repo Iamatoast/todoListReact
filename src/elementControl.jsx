@@ -1,7 +1,7 @@
 import React from 'react'
-import './elementControl.css'
+import './ElementControl.css'
 
-export default function elementControl() {
+export default function ElementControl() {
   return (
     <section id="newElement">
         <div class="input-group mb-3">

@@ -1,7 +1,7 @@
 import React from 'react'
-import ElementControl from './elementControl'
+import ElementControl from './ElementControl'
 
-export default function insert() {
+export default function Insert() {
   return (
     <>
         <ElementControl />
