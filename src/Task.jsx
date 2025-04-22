@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Task({item}) {
-    const select = (id) =>{ //Nehuén despues arregla esto :)
+    const select = () =>{ //Nehuén despues arregla esto :)
         item.classList.toggle("checked");
         item.classList.toggle("table-active");
     }

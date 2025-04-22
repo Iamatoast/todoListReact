@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import ElementControl from './ElementControl'
 import Table from './table'
+import './insert.css'
 
 export default function Insert() {
-  const [task,setTask] = useState([1,2,3,5]);
+  const [task,setTask] = useState([]);
 
   return (
     <>

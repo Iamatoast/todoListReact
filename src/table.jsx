@@ -4,20 +4,22 @@ import Task from './task'
 export default function Table({listado}) {
   
   return (
-    <table class="table table-dark table-bordered table-hover">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Tarea</th>
-          <th scope="col">Fecha Creacion</th>
-          <th scope="col">Fecha Completado</th>
-        </tr>
-      </thead>
-      <tbody>
-        {listado.map(item=>(
-          <Task item={item} />
-        ))}
-      </tbody>
-    </table>
+    <section id="table">
+      <table class="table table-dark table-bordered table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tarea</th>
+            <th scope="col">Fecha Creacion</th>
+            <th scope="col">Fecha Completado</th>
+          </tr>
+        </thead>
+        <tbody>
+          {listado.map(item=>(
+            <Task item={item} />
+          ))}
+        </tbody>
+      </table>
+    </section>
   )
 }
