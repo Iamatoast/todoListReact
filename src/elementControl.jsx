@@ -2,7 +2,7 @@ import React from 'react'
 import './ElementControl.css'
 
 export default function ElementControl({task,setTask}) {
-  
+
   return (
     <section id="newElement">
         <div class="input-group mb-3">
