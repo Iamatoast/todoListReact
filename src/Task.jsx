@@ -13,7 +13,7 @@ export default function Task({item}) {
     return (
     <tr id={item.id} onClick={select()}>
         <th scope="row">
-            <input className="form-check-input" type="checkbox" value="" id="checkbox-0" onClick={checkTask()} />
+            <input className="form-check-input" type="checkbox" value="" id="checkbox-0" checked={item.checked} onClick={checkTask} />
         </th>
         <td>{item.text}</td>
         <td>{item.creationDate ? new Date(item.creationDate).toDateString() : "???"}</td>
