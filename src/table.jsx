@@ -5,7 +5,7 @@ export default function Table({listado}) {
   
   return (
     <section id="table">
-      <table class="table table-dark table-bordered table-hover">
+      <table className="table table-dark table-bordered table-hover">
         <thead>
           <tr>
             <th scope="col">#</th>
