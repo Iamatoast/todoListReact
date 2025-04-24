@@ -2,8 +2,9 @@ import React from 'react'
 
 export default function Task({item}) {
     const select = () =>{ //Nehuén despues arregla esto :)
-        item.classList.toggle("checked");
+        /*item.classList.toggle("checked");
         item.classList.toggle("table-active");
+        */
     }
 
     const checkTask = () => {;

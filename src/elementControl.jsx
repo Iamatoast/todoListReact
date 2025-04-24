@@ -5,9 +5,14 @@ export default function ElementControl({task, setTask}) {
   const ref = useRef(null);
   function insert() {
     let currentTask = ref.current.value;
-    setTask([...task, currentTask]);
-    console.log(task);
     ref.value = "";
+    const newTask = {
+      id: task.length,
+      text: currentTask,
+      creationDate: Date(),
+      finishDate: null
+    }
+    setTask([...task, newTask]);
   }
 
   return (
@@ -19,19 +24,3 @@ export default function ElementControl({task, setTask}) {
     </section>
   )
 }
-
-/*
-1. Obtengo valor del input
-let textInput = document.getElementById().value;
-console.log(nombre)
-2. Creo el objeto nuevo
-const newTask = {
-  id: (completar),
-  text: textInput,
-  creationDate: Date(),
-  finishDate: null
-}
-3. Agregar objeto al listado
-
-4. Limpiar el formulario
-*/
