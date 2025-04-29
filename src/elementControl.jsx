@@ -15,7 +15,6 @@ export default function ElementControl({task, setTask}) {
         checked: false
       }
       setTask([...task, newTask]);
-      localStorage.setItem('tasks', JSON.stringify(task));
     }
   }
 
