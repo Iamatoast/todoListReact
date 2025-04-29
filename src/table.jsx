@@ -1,7 +1,7 @@
 import React from 'react'
 import Task from './Task'
 
-export default function Table({listado}) {
+export default function Table({listado, setTask}) {
   
   return (
     <section id="table">
@@ -16,7 +16,7 @@ export default function Table({listado}) {
         </thead>
         <tbody>
           {listado.map(item=>(
-            <Task item={item} />
+            <Task key={item.id} item={item} setTask={setTask} listado={listado}/>
           ))}
         </tbody>
       </table>

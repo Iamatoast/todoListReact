@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Game Bubble';
-    src: url('Game\ Bubble.ttf');
+    src: url('/src/assets/Game\ Bubble.ttf');
 }
 h1{
     text-align: center;
