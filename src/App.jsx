@@ -1,5 +1,5 @@
 import './App.css'
-import Insert from './Insert.jsx'
+import Insert from './insert.jsx'
 
 function App() {
 

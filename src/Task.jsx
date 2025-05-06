@@ -1,10 +1,10 @@
 import React from 'react'
 
 export default function Task({item, setTask, listado}) {
-    const select = () =>{ //Nehuén despues arregla esto :)
-        /*item.classList.toggle("checked");
-        item.classList.toggle("table-active");
-        */
+    const select = (id) =>{ 
+        let task = document.getElementById(id);
+        task.classList.toggle("checked");
+        task.classList.toggle("table-active");
     }
 
     const updateTask = () => {
@@ -16,7 +16,7 @@ export default function Task({item, setTask, listado}) {
     }
 
     return (
-        <tr id={item.id} onClick={select()}>
+        <tr id={item.id} onClick={() => select(item.id)}>
             <th scope="row">
                 <input className="form-check-input" type="checkbox" value="" id="checkbox-0" defaultChecked={item.checked} onClick={updateTask} />
             </th>

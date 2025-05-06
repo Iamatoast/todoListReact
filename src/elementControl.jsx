@@ -1,5 +1,5 @@
 import React from 'react'
-import './ElementControl.css'
+import './elementControl.css'
 
 export default function ElementControl({task, setTask}) {
   function insert() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Task from './Task'
+import Task from './Task.jsx'
 
 export default function Table({listado, setTask}) {
   
